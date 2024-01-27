@@ -28,9 +28,148 @@ a {
 }
 
 .container {
-  width: 320px;
+  /* min-width: 320px; */
+  /* padding: 0 15px; */
   margin: 0 auto;
 }
+.top-line {
+  background-color: #fff;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+@media screen and (min-width: 768px) {
+  .top-line {
+  }
+}
+.top-page {
+  display: flex;
+}
+.logo-w {
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .logo-w {
+  }
+}
+.logo-s {
+  color: #2e2f42;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+.list-menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .list-menu {
+    display: flex;
+    gap: 40px;
+  }
+  .item-menu {
+    position: relative;
+    color: #404bbf;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+}
+.link-nav {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  line-height: 1.5;
+  padding: 24px 0;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 48px;
+}
+.top-line-ad {
+  display: none;
+}
+.btn-memu {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+}
+@media screen and (min-width: 768px) {
+  .btn-memu {
+    display: none;
+  }
+}
+
+.btn-burger {
+}
+.page-hero {
+  background-color: #2e2f42;
+  padding: 72px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media (min-resolution: 192dpi) {
+  .page-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office-2x.jpg");
+  }
+}
+.title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-align: center;
+  max-width: 212px;
+  max-height: 160px;
+  margin-bottom: 72px;
+  margin-right: auto;
+  margin-left: auto;
+  text-transform: capitalize;
+}
+.btn {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  line-height: 1.5;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*
 
 @media screen and (min-width: 768px) {
   .container {
@@ -42,18 +181,11 @@ a {
     width: 1158px;
     padding: 0 15px;
   }
-}
+} */
 
-/* header*/
-.top-line {
-  background-color: #fff;
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-.top-page {
-  display: flex;
-}
+/* header
+
+
 
 .navigation {
   display: flex;
@@ -71,15 +203,7 @@ a {
   text-transform: uppercase;
   margin-right: 76px;
 }
-.logo-s {
-  color: #2e2f42;
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-}
+
 .list-menu {
   display: flex;
   gap: 40px;
@@ -149,33 +273,18 @@ a {
   display: flex;
   gap: 40px;
   margin: auto;
-}
-/* section hero 1 */
-.page-hero {
-  background-color: #2e2f42;
-  padding: 72px;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 320px;
-  margin: 0 auto;
-}
+}*/
+/* section hero 1 
+
 
 @media screen and (min-width: 768px) {
   .page-hero {
-    max-width: 768px;
     padding: 112px 0;
   }
 }
 @media screen and (min-width: 1440px) {
   .page-hero {
     padding: 188px 0;
-    max-width: 1440px;
   }
 }
 
@@ -205,30 +314,13 @@ a {
     margin-bottom: 48px;
   }
 }
-.btn {
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.64px;
-  background-color: #4d5ae5;
-  cursor: pointer;
-  line-height: 1.5;
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  border-radius: 4px;
-  margin-right: auto;
-  margin-left: auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .btn:hover,
 .btn:focus {
   background-color: #404bbf;
-}
+}*/
 
-/* section offers 2 */
+/* section offers 2 
 .offers {
   background-color: #fff;
   padding: 120px 0;
@@ -289,8 +381,8 @@ a {
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
-}
-/* section team 3 */
+}*/
+/* section team 3 
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -365,8 +457,8 @@ a {
 }
 .social-icon {
   fill: #f4f4fd;
-}
-/* section portfolio 4 */
+}*/
+/* section portfolio 4 
 .portfolio {
   background-color: #ffffff;
   padding: 120px 0 120px 0;
@@ -412,8 +504,8 @@ a {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-}
-/* footer */
+}*/
+/* footer 
 .end-line {
   background-color: #2e2f42;
   padding: 100px 0;
@@ -487,8 +579,8 @@ a {
 .icon-footer {
   fill: #f4f4fd;
 }
-
-/* form-footer */
+*/
+/* form-footer 
 
 .form-footer {
   margin-left: 80px;
@@ -554,9 +646,9 @@ a {
 .btn-footer:hover,
 .btn-footer:focus {
   background-color: #404bbf;
-}
+}*/
 
-/* modal */
+/* modal 
 
 .backdrop {
   display: flex;
@@ -705,9 +797,9 @@ a {
 
 .form-textarea:focus {
   border-color: #4d5ae5;
-}
+}*/
 
-/* checkbox */
+/* checkbox 
 .checkbox-form {
   margin-bottom: 24px;
   position: relative;
@@ -768,3 +860,4 @@ a {
 .btn-modal:focus {
   background-color: #404bbf;
 }
+*/
