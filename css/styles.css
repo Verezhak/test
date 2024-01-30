@@ -57,6 +57,12 @@ a {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+@media screen and (min-width: 1158px) {
+  .top-page {
+    position: relative;
+  }
+}
+
 .top-page {
   display: flex;
   padding-top: 17px;
@@ -77,11 +83,11 @@ a {
   display: flex;
   align-items: center;
 }
-@media screen and (min-width: 1158px) {
+/* @media screen and (min-width: 1158px) {
   .navigation {
     margin-right: auto;
   }
-}
+} */
 @media screen and (min-width: 1158px) {
   .top-page {
     display: flex;
@@ -235,7 +241,9 @@ a {
   .list-contacts {
     display: flex;
     gap: 40px;
-    margin: auto;
+    position: absolute;
+    top: 24px;
+    right: 15px;
   }
 }
 
