@@ -444,11 +444,18 @@
               <div class="portfolio-img">
                 <picture>
                   <source
+                    media="(min-width: 1158px)"
+                    srcset="./images/img7.jpg 1x, ./images/img7@x2.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/img7.jpg 1x, ./images/img7@x2.jpg 2x"
+                  />
+                  <source
                     media="(max-width:767px)"
                     srcset="./images/img7-7.jpg 1x, ./images/img7-7@x2.jpg 2x"
                   />
                   <img
-                    srcset="./images/img7.jpg 1x, ./images/img7@x2.jpg 2x"
                     src="./images/img7.jpg"
                     alt="Graphical user interface of the BankApp application"
                     width="360"
